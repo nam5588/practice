@@ -27,3 +27,16 @@ print("result1:", result1)
 
 result2 = greeting('Justin')
 print("result2:", result2)
+
+print("<===== Keyword & default arguments =====>")
+
+
+# DEFINE
+def give_greet(name, age=20):           # default argument
+    print("give_greet is executed")
+    return f"hi {name}, you are {age} years old!"
+
+
+# CALL
+result3 = give_greet(name='AJAX', age=22)   # keyword argument
+print("result3:", result3)
