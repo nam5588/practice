@@ -30,8 +30,9 @@ print("result2:", result2)
 
 print("<===== Keyword & default arguments =====>")
 
-
 # DEFINE
+
+
 def give_greet(name, age=20):           # default argument
     print("give_greet is executed")
     return f"hi {name}, you are {age} years old!"
@@ -40,3 +41,17 @@ def give_greet(name, age=20):           # default argument
 # CALL
 result3 = give_greet(name='AJAX', age=22)   # keyword argument
 print("result3:", result3)
+
+print("<===== Scope =====>")
+
+b = 100  # 3
+
+
+# DEFINE
+def calculate(a, b=1):  # 2
+    c = a*b     # 1
+    print(f"the value of c is {c}")
+
+
+# CALL
+calculate(5)
