@@ -33,10 +33,32 @@ print()
 animals = ('cat', 'dog', 'leon', 'giraffe')
 tuple_obj = ("MIT", 38, True, "Adam")
 
-print(animals[0])
-animals[0] = 'bird'
+# print(animals[0])
+# animals[0] = 'bird'
+
+names = "Andrew", "Jack"         # bu ham tuple
+university = "Kookmin",          # bu ham tuple 😬
+
+# *args - tuple
 
 
-print()
-print()
+print("====== Unpaking argument ======")
+groups = ['MIT', 'FLEXY', 'DEVEX', 'MG']
+(x, y, *z) = groups
+print(f"the x: {x} / y {y} / z: {z}\n")
+
+# args
+
+
+def calculate(*args):
+    total = 1
+    for x in args:
+        total *= x
+    print(f"the type of (args) value: {type(args)}")
+    print(f"the total value: {total}")
+    return total
+
+
+calculate(1, 7, 2, 3)
+
 print()
