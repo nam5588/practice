@@ -2,7 +2,7 @@ print("======== Iterable objects & Range ========")
 # Iterable objects > string dict tuple list range map filter
 
 range_obj = range(3)
-print("range_obj", range_obj)
+print("range_obj:", range_obj)
 
 for letter in "MIT":
     print(f"the letter: {letter}")
@@ -11,7 +11,11 @@ for ele in range_obj:
 
 print("======== DICTIONARY ========")
 # Dictionary is JSON object!
-person = {"name": "Justin", "age": 25, "single": False}
+person = {
+    "name": "Justin",
+    "age": 25,
+    "single": False
+}
 person_obj = dict(name="Adam", age=20, single=True)
 
 print(f"the person: {person}")
@@ -21,8 +25,8 @@ print(f"the person_obj: {person_obj}")
 # name = person_obj["name"]
 
 name = person_obj.get("name")
-hobby = person_obj.get("hobby")         # yo'q bolsa >  None  < chiqadi
-balance = person_obj.get("balance", 0)      # default holatda 0 oladi
+hobby = person_obj.get("hobby")               # yo'q bolsa >  None  < chiqadi
+balance = person_obj.get("balance", 0)        # default holatda 0 oladi
 
 print(f"the name {name}, hobby: {hobby} and balance: {balance}")
 print("-----------")

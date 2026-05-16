@@ -38,3 +38,11 @@ git pull origin master
 - Comprehantion
 - Debugging
 - ...
+
+
+
+### Mavzular bo'yicha
+- Class to'liq - FLOYD
+- Operation & Conditions - ALEX
+- Loops - LEON
+- Tuple - DAVID

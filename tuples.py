@@ -47,7 +47,9 @@ groups = ['MIT', 'FLEXY', 'DEVEX', 'MG']
 (x, y, *z) = groups
 print(f"the x: {x} / y {y} / z: {z}\n")
 
-# args
+# args  > tuple
+
+print('-------')
 
 
 def calculate(*args):
@@ -60,5 +62,18 @@ def calculate(*args):
 
 
 calculate(1, 7, 2, 3)
+print()
 
+print('-------')
+# **kwargs  > dictionary
+
+
+def intorduce(**kwargs):
+    print(f"the type of (**kwargs) value {type(kwargs)}")
+    print(f"Hi, I am {kwargs['name']} and I am {kwargs['age']}")
+
+
+# call
+intorduce(name='Justin', age=22)
+intorduce(name='Shawn', age=30, single=True)
 print()
