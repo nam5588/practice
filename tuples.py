@@ -78,9 +78,28 @@ intorduce(name='Shawn', age=30, single=True)
 
 print()
 print('-------')
+
+
 def greeting(*args, **kwargs):
     print("*args:", args)       # oddiy args bu oddiy tuple beradi
-    print("*kwargs:", kwargs)   #  kwargs esa bu keyword bilan dict qili beradi
+    print("*kwargs:", kwargs)  # kwargs esa bu keyword bilan dict qili beradi
+
 
 greeting('hi', True, 10, name="Jon", age=22)
+print()
+print()
+
+print("====== zip ======")
+print()
+
+tuple_1 = (1, 2, 3, 4)
+tuple_2 = ('a', 'b', 'c')
+
+
+# birlashirib beradi zip qilib (1 yoki 2da umumiylarni ozaro birlshtiradi)
+zipped = zip(tuple_1, tuple_2)
+print("zipped:", zipped)
+result = list(zipped)
+print("result:", result) # result: [(1, 'a'), (2, 'b'), (3, 'c')]
+
 print()
