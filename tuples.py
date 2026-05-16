@@ -63,7 +63,6 @@ def calculate(*args):
 
 calculate(1, 7, 2, 3)
 print()
-
 print('-------')
 # **kwargs  > dictionary
 
@@ -76,4 +75,12 @@ def intorduce(**kwargs):
 # call
 intorduce(name='Justin', age=22)
 intorduce(name='Shawn', age=30, single=True)
+
+print()
+print('-------')
+def greeting(*args, **kwargs):
+    print("*args:", args)       # oddiy args bu oddiy tuple beradi
+    print("*kwargs:", kwargs)   #  kwargs esa bu keyword bilan dict qili beradi
+
+greeting('hi', True, 10, name="Jon", age=22)
 print()
