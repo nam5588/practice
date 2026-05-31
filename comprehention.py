@@ -34,6 +34,18 @@ cars = [
     ('BMW', 109),
     ('Pagani', 33)
 ]
-list_cars = [car[0] for car in cars if car[1] > 80]
+list_cars = [car[0] for car in cars if car[1] > 80] # a version
 print('list_cars:', list_cars)
+print('\n')
+
+print('===== Set and dictionary comp. =====')
+numbs = [1, 5, 4, 20, 4, 20, 1, 20]
+
+set_numbs = {*numbs}
+print(set_numbs)
+
+dict_people = {person[0]: person[1] for person in people if person[1] > 20} # b/c version
+print('dict_people: ', dict_people)
+
+
 print('\n')
