@@ -5,7 +5,6 @@
     (4) enumerate, map and filter
 """
 import numbers
-from pickle import TRUE
 
 
 print("====== Working with list ======")
