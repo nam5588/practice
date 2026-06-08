@@ -46,3 +46,16 @@ git pull origin master
 - Operation & Conditions - ALEX
 - Loops - LEON
 - Tuple - DAVID
+
+
+## pip command
+```
+    windows pip | macOS pip3
+
+    pip list
+    pip install pillow
+    pip uninstall pillow
+    pip show pillow
+    pip freeze > requierments.txt
+
+```
