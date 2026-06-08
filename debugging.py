@@ -5,6 +5,8 @@
 '''
 
 import turtle
+from PIL import Image
+
 
 print('====== Python Packages & Core Package ======')
 ''' Python Package/Module: Core, File and External'''
@@ -31,3 +33,17 @@ with open('material/msg.txt', 'r') as your_file:
     print("your_content:",your_content)
     
 print("--- DONE ---")
+
+
+
+print('====== Package Manager & External Package ======')
+''' Package Managers: Python (pip pipenv) & nodeJS (npm yarn)
+    PHP > composer
+    MacOS > brew
+'''
+# External packages > https://pypi.org/
+
+with Image.open('material/logo.png') as img_obj:
+    resized = img_obj.resize((200, 200))
+    resized.show()
+    resized.save("material/sample.png")
